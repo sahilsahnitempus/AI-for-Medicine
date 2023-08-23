@@ -1,26 +1,14 @@
 [tool.poetry]
-name = "api-authorization"
-version = "1.2.4"
-description = "Auth Service to host single endpoint for Okta to hit for its inline webhook workflow."
+name = "AI-FOR-MEDICINE"
+version = "1.0.0"
+description = ""
 authors = ["sahilsahnitempus"]
 readme = "README.md"
 packages = [{include = "app"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-tempus-fastapi-utils = "1.1.1"
 pydantic = "1.10.6"
-
-gunicorn = "20.1.0"
-uvicorn = "0.22.0"
-asyncpg = "0.28.0"
-tempus-logging-utils = "1.3.0"
-python-dotenv = "0.21.0"
-message-gateway-utils = "1.2.64"
-fastapi = "0.95.2"
-fastapi-limiter = "^0.1.5"
-tempus-security-utils = "^1.10.0"
-
 
 [tool.poetry.group.dev.dependencies]
 isort = "5.10.1"
@@ -34,7 +22,3 @@ black = "23.1.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[[tool.poetry.source]]
-name = "tempus"
-url = "https://nexus.opstempus.com/repository/pypi/simple"
